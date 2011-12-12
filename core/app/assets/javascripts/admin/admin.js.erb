@@ -78,7 +78,11 @@ format_product_autocomplete = function(data){
 prep_product_autocomplete_data = function(data){
   return $.map(eval(data), function(row) {
 
-    var product = row['product'];
+    if(row['product']){
+      var product = row['product'];
+    }else{
+      var product = row;
+    }
 
     if(product['variants'].length>0 && ['expand_variants']){
       //variants
