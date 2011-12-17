@@ -6,5 +6,5 @@
 //= require jquery.delayedobserver
 //= require jquery.jstree/jquery.jstree
 //= require jquery.alerts/jquery.alerts
-//= require jquery.autocomplete.min
+//= require jquery.autocomplete
 //= require_tree .
